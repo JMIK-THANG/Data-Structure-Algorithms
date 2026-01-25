@@ -15,7 +15,7 @@ function reverseString(s) {
    
     s[len - 1 - i] = temp;
   }
-  return s;
+  // return s;
 }
-const reverse = reverseString(s);
-console.log(reverse)
+ reverseString(s);
+ console.log(s)
