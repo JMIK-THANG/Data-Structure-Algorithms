@@ -10,7 +10,6 @@ function reverseString(s) {
 
   for (let i = 0; i < halfLen; i++){
     let temp = s[i];
-     console.log(s[i])
     s[i] = s[len - 1 - i];
    
     s[len - 1 - i] = temp;
@@ -18,4 +17,19 @@ function reverseString(s) {
   // return s;
 }
  reverseString(s);
- console.log(s)
+ console.log(JSON.stringify(s))
+ 
+// Using while loop
+ let c = ['h','e','l','l','o'];
+
+let left = 0;
+let right = c.length - 1;
+
+while (left < right) {
+  let temp = c[left];
+  c[left] = c[right];
+  c[right] = temp;
+  left++;
+  right--;
+}
+console.log(c)
